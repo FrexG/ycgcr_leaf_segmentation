@@ -2,7 +2,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+# k-means segmentation for benchmarking(comparison) purpose
 class KMEANS:
     def __init__(self, *filename, **image):
         image_path = image["image"]
