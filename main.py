@@ -4,14 +4,10 @@ import os
 
 
 class Main:
-    # Path to saved model
     def getImagePath(self, image_path, filename):
         # get path of image file
         return os.path.join(image_path, filename)
 
-    def getModelPath(self):
-        # get path of model
-        return ("hi")
 
     def classifyImage(self, imagepath, filename):
         # Start Image Segmentation
@@ -22,7 +18,8 @@ class Main:
 
 
 if __name__ == "__main__":
-    image_path = '/home/frexg/Downloads/lara2018-master/segmentation/dataset/images/test'
+    # path to training images
+    image_path = '/...../lara2018-master/segmentation/dataset/images/test'
     c = Main()
     if os.path.exists(image_path):
         for dirpath, dirname, filenames in os.walk(image_path):
