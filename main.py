@@ -19,11 +19,11 @@ class Main:
 
 if __name__ == "__main__":
     # path to training images
-    image_path = '/...../lara2018-master/segmentation/dataset/images/test'
+    image_path = '.....'
     c = Main()
     if os.path.exists(image_path):
         for dirpath, dirname, filenames in os.walk(image_path):
             for ImageFile in filenames:
                 c.classifyImage(image_path, ImageFile)
     else:
-        print("Incorrent path")
+        print("Image path not found!")
